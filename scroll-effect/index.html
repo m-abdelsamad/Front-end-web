@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark">
+
+    <div class="video-holder">
+        <div class="side" id="side1">
+            <video src="resources/bg-video.mp4" loop autoplay muted></video>
+        </div>
+        <div class="side" id="side2">
+            <video src="resources/bg-video.mp4" loop autoplay muted></video>
+        </div>
+    </div>
+
+    <section class="d-flex justify-content-center align-items-center" style="margin-top: 100%; margin-bottom: 30%;">
+        <div class="loader d-flex justify-content-center align-items-center flex-column">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <h1 class="display-4 text-white">WELCOME</h1>
+            <h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                </svg>
+            </h1>
+        </div>
+    </section>
+
+    <div class="container container-fluid text-white">
+        <h1 class="display-1">Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis officiis ea autem saepe et deleniti laudantium asperiores maxime illo blanditiis doloremque quaerat numquam quas quod similique nostrum inventore, nemo magni reprehenderit qui placeat dolores doloribus. Hic, quibusdam? Et exercitationem consectetur iste architecto facilis, asperiores quod velit magni? Atque quas adipisci ad, consequatur ipsum inventore at. Voluptatum optio ab soluta suscipit, officiis vel, esse facilis illum numquam aut in aliquam atque placeat quam aperiam, laudantium maiores impedit voluptatem odio? Voluptas aut, temporibus recusandae at fuga sint earum impedit nisi ea sequi maxime modi officiis. Ratione accusamus libero sapiente enim reiciendis, obcaecati doloremque pariatur veritatis velit! Inventore incidunt aut laudantium placeat quod, illo sequi deleniti eos ullam dolor, facilis minima dolores vitae harum eius, excepturi cumque officia. Sit numquam perspiciatis repellendus a voluptatibus, quam, eos cum iste molestias quos nobis nulla suscipit dolorum explicabo expedita? Et tempora ex ratione laboriosam nihil accusantium beatae totam pariatur similique reprehenderit nostrum adipisci debitis ipsam eveniet omnis, dolor, veritatis deserunt iusto a molestias dicta animi, quas quam neque! Omnis dolorem, dolore blanditiis nihil repellendus modi, ad at sint repudiandae facilis sapiente quis itaque expedita iusto corrupti, recusandae necessitatibus id adipisci iste natus tempore voluptatem! Enim?</p>
+    </div>
+
+
+    <script>
+        window.addEventListener('scroll', function(){
+            var value = window.pageYOffset;
+            $('#side1').css({
+                left: -value+'px',
+            });
+
+            $('#side2').css({
+                left: value+'px',
+            })
+        })
+    </script>
+
+    
+</body>
+</html>

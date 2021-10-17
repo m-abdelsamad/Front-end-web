@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div>
+        <div class="fixed-top  shadow">
+            <nav class="navbar nav container container-fluid space-between">
+                <div class="logo text-white">
+                    <h1 class="display-4">Logo</h1>
+                </div>
+    
+                <div class="d-flex space-arround px-2">
+                    <a href="" class="nav-item active">About</a>
+                    <a href="" class="nav-item">Contact</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="picture_holder d-flex justify-content-center align-items-center">
+            <div class="overlay"></div>
+            <!-- <img class="moon" src="resources/moon.png" alt="">
+            <img class="stars" src="resources/stars.png" alt=""> -->
+            <h1 id="main-text-display" class="">Moon Light</h1>
+            <!-- <img class="mountain-behind" src="resources/mountains_behind.png" alt="">
+            <img class="mountain-front" src="resources/mountains_front.png" alt=""> -->
+
+
+            <div class="moon img-bg"></div>
+            <div class="stars img-bg"></div>
+            <div class="mountain-behind img-bg"></div>
+            <div class="mountain-front img-bg"></div>
+        </div>
+    </div>
+
+    
+
+
+   <div style="background: #1c0522; padding-top: 10%;">
+        <div class="content container container-fluid text-white">
+            <h1 class="display-4">Parallax Scrolling</h1>
+            <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo earum sequi neque quae quod explicabo illo odit sapiente eaque consequuntur, corrupti quas possimus suscipit modi distinctio eius adipisci laboriosam quia ipsum ea unde illum. Vel quaerat ab obcaecati atque laudantium harum, ullam consequatur error expedita! Dolor labore tempora debitis enim qui quo explicabo quae asperiores, nemo in ipsam voluptatem laudantium corporis sapiente, beatae iure repellat itaque pariatur officia suscipit voluptate! Praesentium molestias reiciendis aut labore itaque soluta dolorem quidem officia ad minus natus, impedit molestiae? Quasi ea cupiditate necessitatibus nostrum reiciendis rem debitis ab perspiciatis dolor, rerum praesentium pariatur at?</p>
+            <br>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur officiis est cum rem illo facilis totam nemo ad voluptate hic saepe placeat minus eius tenetur animi eum optio ratione in, numquam, porro et. Quo consequuntur alias voluptates corrupti officiis dolore inventore perspiciatis, tenetur voluptatem maxime aspernatur error veniam itaque minima exercitationem nostrum distinctio eligendi! Vero veritatis necessitatibus tempora quo deleniti voluptates alias dolorem laboriosam repellendus earum adipisci ducimus iusto unde odit consequuntur, quaerat eaque voluptate reiciendis minus ipsa velit sit voluptas rerum? Voluptas id ex nostrum animi architecto aut voluptates nobis quos illum eum, rem cumque dolores quia nisi!</p>
+            <br>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur officiis est cum rem illo facilis totam nemo ad voluptate hic saepe placeat minus eius tenetur animi eum optio ratione in, numquam, porro et. Quo consequuntur alias voluptates corrupti officiis dolore inventore perspiciatis, tenetur voluptatem maxime aspernatur error veniam itaque minima exercitationem nostrum distinctio eligendi! Vero veritatis necessitatibus tempora quo deleniti voluptates alias dolorem laboriosam repellendus earum adipisci ducimus iusto unde odit consequuntur, quaerat eaque voluptate reiciendis minus ipsa velit sit voluptas rerum? Voluptas id ex nostrum animi architecto aut voluptates nobis quos illum eum, rem cumque dolores quia nisi!</p>
+
+            <br>
+            <br>
+        
+        </div>
+   </div>
+
+<script>
+
+    window.addEventListener('scroll', ()=>{
+        let value = window.scrollY;
+        $('.stars').css({
+            left: `${value * 2}px `,
+        });
+
+        $('.moon').css({
+            top: `${value * 0.9}px `,
+        })
+
+        $('#main-text-display').css({
+            marginRight: `-${value * 4}px`,
+        });
+    })
+</script>
+
+</body>
+</html>

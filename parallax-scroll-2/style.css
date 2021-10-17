@@ -1,0 +1,99 @@
+.p-img1, .p-img2, .p-img3, .p-img4, .p-img5{
+    position: relative;
+    opacity: 0.7;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+
+.p-img1{
+    background-image: url(resources/pexels-beatriz-beltrame-3390729.jpg);
+    height: 100vh;
+}
+.p-img2{
+    background-image: url(resources/pexels-daniel-jurin-1835712.jpg);
+    height: 500px;
+}
+.p-img3{
+    background-image: url(resources/pexels-pok-rie-3356169.jpg);
+    height: 500px;
+}
+
+.p-img5{
+    position: relative;
+    /* background: #3586ff; */
+    background-image: url(resources/pexels-pok-rie-3356169.jpg);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(resources/wave.png);
+    background-position: center;
+    background-size: 1000px 100px;
+    /* animation: animate 15s linear infinite; */
+}
+
+.wave1{
+
+    z-index: 1000;
+    opacity: 1;
+    animation: animate 30s linear infinite;
+    /* animation-delay: 2s; */
+}
+ .wave2{
+    z-index: 800;
+    opacity: 0.5;
+    animation: animate2 15s linear infinite;
+    animation-delay: 5s;
+    bottom: 10px;
+}
+ .wave3{
+    z-index: 700;
+    opacity: 0.8;
+    animation: animate 30s linear infinite;
+    animation-delay: 5s;
+    bottom: 15px;
+}
+ .wave4{
+    z-index: 600;
+    opacity: 0.6;
+    animation: animate 30s linear infinite;
+    animation-delay: 5s;
+    bottom: 9px;
+}
+
+
+@keyframes animate {
+    0%{background-position-x: 0;}
+    100%{background-position-x: 1000px;}
+}
+@keyframes animate2 {
+    0%{background-position-x: 0;}
+    100%{background-position-x: -1000px;}
+}
+
+
+
+
+
+.border-style{
+    opacity: 1 !important;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+.box-content{
+    padding: 0 15% !important;
+}

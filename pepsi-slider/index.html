@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="backgrounds">
+        <div id="bg_1"  class="blue bgs active-bg"></div>
+        <div id="bg_2" class="red bgs"></div>
+        <div id="bg_3" class="black bgs"></div>
+    </div>
+
+    <div class="shadow">
+        <nav class="navbar nav container container-fluid d-flex space-between">
+            <div class="logo-pic">
+                <img src="resources/logo.png" class="logo" alt="">
+            </div>
+
+            <div class=" d-flex flex-row space-arround">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="container container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-6 mt-5 mb-5">
+                <h1 class="heading">that's what</h1>
+                <h1 class="subheading">i like</h1>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minima provident culpa inventore vero consequuntur, doloribus itaque vitae laboriosam nulla amet autem? Dolorum blanditiis ipsum at perspiciatis quo autem reprehenderit commodi aliquid corrupti atque ea, deserunt dolor rem labore voluptate praesentium. Sit sed laborum voluptates non quas beatae maiores eaque.</p>
+                <br>
+                <button class="btn btn-outline-light">VIEW ALL PRODUCTS</button>
+            
+            </div>
+            <div class="col-sm-6 mb-5">
+                <div class="img-holder">
+                    <img src="resources/pepsi001.png" class="pepsi_img" alt="">
+                </div>
+            </div>
+
+            <div class="can-holders space-arround mt-5">
+                <img src="resources/pepsi001.png" class="cans " onclick="changePepsi('resources/pepsi001.png');" id="can_1" alt="">
+                <img src="resources/pepsi002.png" class="cans " onclick="changePepsi('resources/pepsi002.png');" id="can_2" alt="">
+                <img src="resources/pepsi003.png" class="cans " onclick="changePepsi('resources/pepsi003.png');" id="can_3" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="container container-fluid mt-5">
+        <div class="row">
+            
+            <div class="col-sm-6 mb-5">
+                <div class="img-holder">
+                    <img src="resources/pepsi001.png" class="pepsi_img" alt="">
+                </div>
+            </div>
+
+            <div class="col-sm-6 mt-5 mb-5">
+                <h1 class="heading">that's what</h1>
+                <h1 class="subheading">i like</h1>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minima provident culpa inventore vero consequuntur, doloribus itaque vitae laboriosam nulla amet autem? Dolorum blanditiis ipsum at perspiciatis quo autem reprehenderit commodi aliquid corrupti atque ea, deserunt dolor rem labore voluptate praesentium. Sit sed laborum voluptates non quas beatae maiores eaque.</p>
+                <br>
+                <button class="btn btn-outline-light">VIEW ALL PRODUCTS</button>
+            
+            </div>
+
+            
+        </div>
+
+    </div>
+
+    <div style="height: 300px;"></div>
+
+
+    
+
+
+    <script>
+         $('.cans').click(function(){
+            var id_value = $(this).attr('id');
+            var id = id_value.split("_");
+            var bg_name = `#bg_${id[1]}`;
+
+            $('.bgs').each(function(){
+                $(this).removeClass('active-bg');
+            });
+
+            $(bg_name).addClass('active-bg');
+        });
+
+
+        function changePepsi(img){
+            $('.pepsi_img').each(function(){
+                $(this).attr('src', img);
+            })
+        }
+    </script>
+
+
+    
+</body>
+</html>

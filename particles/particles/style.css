@@ -1,0 +1,151 @@
+.main-display{
+    height: 800px;
+    width: 100%;
+}
+
+.nav-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.nav-link:hover{
+    background: black;
+    color: white;
+}
+
+.img-display{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.bg-holder{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.img-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#particles-js{
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    mix-blend-mode: screen;
+}
+
+.msg-display{
+    z-index: 0;
+}
+
+.img-display{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -10;
+}
+
+.img-display img{
+    z-index: -5;
+    position: absolute;
+    border-radius: 2px;
+}
+
+/* .wel-msg{
+    position: absolute;
+    top: 50%;
+} */
+
+
+.content-holder{
+    height: 520px;
+    margin: 3%;
+    border: solid 1px rgba(128, 128, 128, 0.2);
+    border-radius: 10px;
+}
+
+.content-holder .img-holder{
+    height: 270px;
+}
+
+.img-holder img{
+    border-radius: 10px 10px 0 0;
+}
+
+
+.art-display{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 5%;
+    /* margin-bottom: 30%; */
+    margin-top: 7%;
+}
+
+.content-holder h1, .content-holder p{
+    padding: 0 5%;
+}
+
+
+@media screen and (max-width: 600px){
+    .art-display{
+        margin-top: 35%;
+        /* margin-bottom: 580% !important; */
+    }
+
+    .img-display img:nth-child(2){
+        width: 150px !important;
+        height: 190px !important;
+    }
+
+    .img-display img:nth-child(4){
+        width: 190px;
+        height: 250px !important;
+        top: 67% !important;
+    }
+
+    /* .img-display img:nth-child(even){
+        width: 290px;
+        height: 390px;;
+    } */
+}
+
+@media screen and (max-width: 900px){
+    .col-sm-4{
+        width: 100%;
+    }
+}
+
+.container-fluid-content{
+    padding: 50px 60px;
+}
+
+.contact_details{
+    color: #777;
+}
+
+.form-group input, textarea{
+    color: #777;
+    font-size: 13px;
+}
